@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title> Registration </title>
+<link rel="Shortcut icon"
+  href="LFLogo.png">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+  
+<body>
+    
+<header>
+<div id="navbar"> 
+	<div class="logo">
+		<img src="LFLogo.png" alt="Logo">
+	</div>
+  <h1>Local Restaurants Review</h1>
+  
+  <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Review.html">Write a Review</a></li>
+        <li><a href="login.html">Reviews</a></li>
+        <li><a href="./registration.html">registration</a></li>
+        <li><a href="About.html">About us</a></li>
+  </ul> 
+</div>
+</header>
+<main>
+
+    <div id="form">
+<h3>Please fill out the following fields to create an account</h3>  	
+<form action="register_account.html" method="get"
+        		name="registration_form" id="registration_form">
+    			<fieldset>
+					<form class="registration">
+						<p class = "registration-text" style="font-size: 2rem; font-weight: 500;">Registration</p>
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="email" autofocus required><br>
+        	<label for="first_name">First Name:</label>
+					<input type="text" name="first_name" id="first_name" required><br>
+					<label for="last_name">Last Name:</label>
+					<input type="text" name="last_name" id="last_name" required><br>
+					<label for="last_name">Password:</label>
+					<input type="text" name="Password" id="Password" ><br>
+					<label for="last_name">Repeat Password:</label>
+					<input type="text" name="repeat_password" id="repeat_password" ><br>
+				</fieldset>
+        <button type="button" onclick="alert('Your account has been created')">Create Account</button> 
+		<p class="login-register-text">Have an account? <a href="login.html">Login Here</a></p>
+
+		</form>
+    </div>
+</main>
+
+  </body>
+</html>

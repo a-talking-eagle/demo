@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> Write a Review </title>
+  <link rel="Shortcut icon"
+  href="LFLogo.png">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div id="navbar"> 
+                <div class="logo">
+                    <img src="LFLogo.png" alt="Logo">
+                </div>
+          <h1>Local Restaurants Review</h1>
+          
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Review.html">Write a Review</a></li>
+                <li><a href="login.html">Reviews</a></li>
+                <li><a href="./registration.html">registration</a></li>
+                <li><a href="About.html">About us</a></li>
+          </ul> 
+        </div>
+        </header>
+        <div>
+
+          <input id="input" type="text" placeholder="Search for Restaurant">
+          
+  <div id="map" style="height: 1000px; width: 60%;"></div>
+  <script src="places.js"></script>
+  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGkIEuB4RRkKiHp2tRkh3lq_dpdcHBlL8&libraries=places"></script>
+</div>
+
+
+<div id="revieew">
+  
+  <div class="Container">
+
+    <h3>Welcome To Local Food!</h3>
+    <!-- this is index.php from ryan-->
+  
+    <form action="insert.php" method="post">
+                  
+<p>
+            <label for="Username">Username:</label>
+            <input type="text" name="Username" id="Username">
+        </p>
+
+<p>
+            <label for="Score">Score:</label>
+            <input type="text" name="Score" id="Score">
+        </p>
+
+          
+<p>
+            <label for="Restaurantname">Restaurant Name:</label>
+            <input type="text" name="Restaurantname" id="Restaurantname">
+        </p>
+      
+<p>
+            <label for="review">Review:</label>
+            <input type="text" name="review" id="review">
+        </p>
+          
+<p>
+            <label for="cityname">Address:</label>
+            <input type="text" name="cityname" id="cityname">
+        </p>
+
+          
+        <button type="submit" >Submit </button>
+    </form>
+
+   
+    <!-- This is Rojers original form
+            <fieldset>
+            <form class="Review">
+            <p class = "login-text">Write A Review</p>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" autofocus required><br>
+            <label for="Description">Description:</label>
+            <input type="text" name="Description" id="Description" ><br>
+           <label for="City">City:</label>
+            <input type="text" name="City" id="City" ><br>
+          
+          <div class="rate">
+            <input type="radio" id="star-5" name="rate" value="5" />
+            <label for="star-5" title="text"></label>
+            <input type="radio" id="star-4" name="rate" value="4" />
+            <label for="star-4" title="text"></label>
+            <input type="radio" id="star-3" name="rate" value="3" />
+            <label for="star-3" title="text"></label>
+            <input type="radio" id="star-2" name="rate" value="2" />
+            <label for="star-2" title="text"></label>
+            <input type="radio" id="star-1" name="rate" value="1" />
+            <label for="star-1" title="text"></label>
+          </div>
+
+          <button type="button">Submit</button>
+        </form>
+      </fieldset> 
+    -->
+      </div>
+  </div>  
+
+
+  <div id="footer">
+    <p class ="footer_one">© 2022 Local Food </p>
+  </div>  
+</body>
+
+</html>
